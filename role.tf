@@ -1,4 +1,4 @@
-resource "vault_kubernetes_auth_backend_role" "example" {
+resource "vault_kubernetes_auth_backend_role" "role" {
   for_each                         = toset(var.application) 
   backend                          = var.k8s_path
   role_name                        = each.value
