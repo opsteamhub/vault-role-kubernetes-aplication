@@ -18,5 +18,5 @@ variable "bound_service_account_names" {
 }
 
 variable "k8s_path" {
-  defdefault = ""  
+  default = ""  
 }
