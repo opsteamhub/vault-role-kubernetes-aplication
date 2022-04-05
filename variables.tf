@@ -20,3 +20,7 @@ variable "token_ttl" {
 variable "bound_service_account_names" {
   default = "default"
 }
+
+variable "k8s_path" {
+  defdefault = ""  
+}
