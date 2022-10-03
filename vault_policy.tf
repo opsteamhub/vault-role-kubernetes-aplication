@@ -13,3 +13,14 @@ path "${var.environment}/data/${each.value}" {
 EOT
 }
 
+path "${var.environment}/data/redis" {
+  capabilities = ["list", "read"]
+}
+EOT
+}
+
+path "${var.environment}/data/mongodb_atlas" {
+  capabilities = ["list", "read"]
+}
+EOT
+}
