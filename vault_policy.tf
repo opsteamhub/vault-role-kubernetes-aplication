@@ -23,6 +23,10 @@ path "${var.environment}/data/mongodb_atlas/${each.value}" {
   capabilities = ["list", "read"]
 }
 
+path "${var.environment}/data/rabbitmq" {
+  capabilities = ["list", "read"]
+}
+
 EOT
 }
 
