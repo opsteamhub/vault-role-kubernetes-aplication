@@ -7,6 +7,10 @@ path "${var.environment}/*" {
   capabilities = ["list"]
 }
 
+path "${var.environment}/data/default" {
+  capabilities = ["list", "read"]
+}
+
 path "${var.environment}/data/${each.value}" {
   capabilities = ["list", "read"]
 }
@@ -14,6 +18,7 @@ path "${var.environment}/data/${each.value}" {
 path "${var.environment}/data/redis" {
   capabilities = ["list", "read"]
 }
+
 path "${var.environment}/data/mongodb_atlas" {
   capabilities = ["list", "read"]
 }
