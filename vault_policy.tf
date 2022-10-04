@@ -15,11 +15,11 @@ path "${var.environment}/data/${each.value}" {
   capabilities = ["list", "read"]
 }
 
-path "${var.environment}/data/redis" {
+path "${var.environment}/data/redis/${each.value}" {
   capabilities = ["list", "read"]
 }
 
-path "${var.environment}/data/mongodb_atlas" {
+path "${var.environment}/data/mongodb_atlas/${each.value}" {
   capabilities = ["list", "read"]
 }
 
